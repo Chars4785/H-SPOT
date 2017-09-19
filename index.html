@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog Page</title>
+    <style>
+
+#food {
+	position:absolute;
+	top:0%;
+    width: 100%;
+    height: 25%;
+	overflow: hidden;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-image:url("http://cslab2.kku.ac.kr/~201341357/image/main/food3.jpg");
+}
+
+#dessert {
+	position:absolute;
+	top:25%;
+    width: 100%;
+	height:25%;
+	overflow: hidden;
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+    background-image:url("http://cslab2.kku.ac.kr/~201341357/image/main/dessert2.jpg");
+   
+}
+
+#play {
+	position: absolute;
+	top:50%;
+    width: 100%;
+    height: 25%;
+		overflow: hidden;
+	background-size:100%;
+	
+	background-repeat:no-repeat;
+    background-image:url("http://cslab2.kku.ac.kr/~201341357/image/main/play2.jpg");
+}
+
+#show{
+	position: absolute;
+	top:75%;
+	width: 100%;
+	height: 25%;
+		overflow: hidden;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-image:url("http://cslab2.kku.ac.kr/~201341357/image/main/show2.png");
+}
+
+#overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0s ease;
+  opacity:0.3;
+}
+
+#food:hover #overlay {
+  width: 100%;
+  left: 0;
+}
+#dessert:hover #overlay {
+  width: 100%;
+  left: 0;
+}
+#play:hover #overlay {
+  width: 100%;
+  left: 0;
+}
+#show:hover #overlay {
+  width: 100%;
+  left: 0;
+}
+
+
+h1{
+	font-size:1300%;
+	color:white;
+	
+}
+#name{
+	position:absolute;
+	top:-180px;
+	left:10%;
+}
+
+</style>
+</head>
+<body>
+    <div id="wrapper" >
+        
+		<div id="food" onclick="location.href='http://cslab2.kku.ac.kr/~201341357/food/food_normal.html'">
+			<div id="overlay"></div>
+			
+			<div id="name">
+				<h1>FOOD</h1>
+			</div>
+		</div>
+		
+        <div id="dessert" onclick="location.href='http://cslab2.kku.ac.kr/~201341357/dessert/dessert_normal.html'">
+		<div id="overlay"></div>
+		
+				<div id="name"><h1>DESSERT<h1></div>
+		
+		</div>
+		
+        <div id="play" onclick="location.href='http://cslab2.kku.ac.kr/~201341357/play/play_normal.html'"> 
+		<div id="overlay"></div>
+		
+				<div id="name"><h1>PLAY<h1></div>
+		
+		</div>
+		
+        <div id="show" onclick="location.href='http://cslab2.kku.ac.kr/~201341357/show/show_normal.html'">
+		<div id="overlay"></div>
+	
+				<div id="name"><h1>SHOW<h1></div>
+		
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+	#dd{
+		position:fixed;
+		top:0;
+		width:100%;
+		background-color:black;
+		text-align:center;
+	
+	}
+
+	#main{
+		margin:auto;
+	}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 13.5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 40px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+	font-size:25px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#im{
+	position:relative;
+	
+	width:3%;
+	height:3%;
+}
+
+body{
+	background-color:black;
+}
+
+
+
+
+
+#contain1{
+position:absolute;
+top:40%;
+left:0;
+width:100%;
+background:#000000;
+text-align:center;
+z-index:-1;
+}
+p{
+	color:white;
+}
+
+
+<!-- 여기서 부터 복사할 것들-->
+
+<!--여기-->
+
+
+</style>
+</head>
+<body>
+
+<div id=dd>
+	<img id=im src="http://cslab2.kku.ac.kr/~201341357/image/main/home.png" 
+		onclick="location.href='http://cslab2.kku.ac.kr/~201341357'">
+
+	<div id=main>
+		<li class="dropdown">
+			<a href="#home" class="drop">FOOD</a>
+			<div class="dropdown-content">
+				<a href="#">한식</a>
+				<a href="#">중식</a>
+				<a href="#">일식</a>
+				<a href="#">양식</a>
+				<a href="#">갠취</a>
+			</div>
+		</li>
+		<li class="dropdown" class="drop">
+			<a href="#news">DESSERT</a>
+			<div class="dropdown-content">
+				<a href="#">빨강</a>
+				<a href="#">초록</a>
+				<a href="#">파랑</a>
+				<a href="#">흰색</a>
+				<a href="#">핑크</a>
+			</div>
+		</li>
+		<li class="dropdown" class="drop">
+			<a href="#news">PLAY</a>
+			<div class="dropdown-content">
+				<a href="#">PC방</a>
+				<a href="#">노래방</a>
+				<a href="#">오락실</a>
+				<a href="#">갠취</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">SHOW</a>
+			<div class="dropdown-content">
+				<a href="#">버스킹</a>
+				<a href="#">영화관</a>
+				<a href="#">극장</a>
+				<a href="#">공연</a>
+				<a href="#">갠취</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">REGISTER</a>
+		</li>
+	</div>
+</div>
+
+
+
+
+<div id=contain1>
+	 <div id=wrapper>
+			
+		<div id=clone>
+			<div id=clone_left> <img src="test_food.jpg" id=clone_img></div>
+			<div id=clone_right>
+				<div id=clone_right_name><p>홍대맛집</div>
+				<div id=clone_right_price><p>40000원</div>
+			</div>
+		</div>
+		<div id=clone>
+			
+			<div id=clone_right>
+				<div id=clone_right_name><p>홍대맛집</div>
+				<div id=clone_right_price><p>40000원</div>
+			</div>
+		</div>
+	
+		
+		
+</div>
+	
+
+	
+	
+</body>
+</html>
