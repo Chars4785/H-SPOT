@@ -1,6 +1,6 @@
 # H-SPOT
 
- This file is for project to find "Good Store knowing only me".
+ This file is  project to find "Good Store knowing only me".
 
  HTML
  CSS
